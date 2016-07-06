@@ -2,17 +2,11 @@ package com.test;
 
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
-import android.support.v7.widget.Toolbar;
 import android.view.LayoutInflater;
-import android.view.Menu;
-import android.view.MenuItem;
 import android.view.View;
 import android.view.ViewGroup;
-import android.widget.AbsListView;
-import android.widget.ArrayAdapter;
 import android.widget.ImageView;
 import android.widget.LinearLayout;
-import android.widget.ListView;
 
 import com.carouselview.CarouselView;
 import com.imageloader.ImageLoaderUtils;
@@ -44,7 +38,7 @@ public class MainActivity extends AppCompatActivity {
 
             @Override
             public View getView(int position) {
-                View view = mInflater.inflate(R.layout.item,null);
+                View view = mInflater.inflate(R.layout.carousel_item,null);
                 ImageView imageView = (ImageView) view.findViewById(R.id.image);
                 ImageLoaderUtils.loadBitmap(mImageUrls[position],imageView);
                 return view;

@@ -174,7 +174,7 @@ public class ImageLoaderUtils {
     }
 
     public static void initImageLoader(Context context) {
-        File cacheDir = StorageUtils.getCacheDirectory(context);
+//        File cacheDir = StorageUtils.getCacheDirectory(context);
         ImageLoaderConfiguration config = new ImageLoaderConfiguration.Builder(context)
                 .memoryCacheExtraOptions(480, 800) // default = device screen
                                                    // dimensions
